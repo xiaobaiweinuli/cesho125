@@ -1,0 +1,50 @@
+
+name: 友链申请
+description: 申请加入友链
+title: "[友链申请] "
+labels: ["友链申请"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: 网站名称
+      description: 你的网站名称
+      placeholder: 例如：xaoxuu
+    validations:
+      required: true
+      
+  - type: input
+    id: url
+    attributes:
+      label: 网站地址
+      description: 你的网站 URL
+      placeholder: 例如：https://xaoxuu.com
+    validations:
+      required: true
+      
+  - type: input
+    id: avatar
+    attributes:
+      label: 头像地址
+      description: 你的头像 URL
+      placeholder: 例如：https://cn.cravatar.com/avatar/xxx?s=512
+    validations:
+      required: false
+      
+  - type: textarea
+    id: description
+    attributes:
+      label: 网站描述
+      description: 简短描述你的网站
+      placeholder: 例如：For all time, always.
+    validations:
+      required: false
+      
+  - type: input
+    id: feed
+    attributes:
+      label: RSS 订阅地址
+      description: 你的网站 RSS/Atom 订阅地址
+      placeholder: 例如：https://xaoxuu.com/atom.xml
+    validations:
+      required: true
